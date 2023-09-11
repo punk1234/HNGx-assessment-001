@@ -12,11 +12,11 @@ function updateDayAndTimeFields() {
   ];
     
   // SET WEEK-DAY
-  document.querySelector('.currentDay').innerHTML = `Today is: ${weekDays[currentDay]}`;
+  document.querySelector('.currentDay').innerHTML = weekDays[currentDay];
     
   // SET UTC MILLI-SEC TIME EVERY SECOND
   setInterval(() => {
-    document.querySelector('.UTCTime').innerHTML = `UTC Time is: ${Date.now()}`;
+    document.querySelector('.UTCTime').innerHTML = Date.now();
   }, 1000);
 };
 
